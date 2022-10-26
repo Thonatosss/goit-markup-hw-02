@@ -1,0 +1,37 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --button-backround-color: #f5f4fa;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.filters button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+.filters button {
+  color: var(--primary-text-color);
+  background-color: var(--button-backround-color);
+}
+
+.list-item h2 {
+  color: var(--primary-text-color);
+}
+.list-item p {
+  color: var(--secondary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
