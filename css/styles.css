@@ -9,7 +9,13 @@
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
 }
+.navigation-links a:hover,
+a:focus {
+  color: var(--accent-color);
+}
+
 .filters button:hover,
 button:focus {
   background-color: var(--accent-color);
@@ -19,6 +25,7 @@ button:focus {
 .filters button {
   color: var(--primary-text-color);
   background-color: var(--button-backround-color);
+  cursor: pointer;
 }
 
 .list-item h2 {
@@ -34,4 +41,46 @@ ul {
 
 a {
   text-decoration: none;
+}
+.adress a:hover,
+a:focus {
+  color: var(--accent-color);
+}
+.adress {
+  color: var(--secondary-text-color);
+}
+.logo {
+  font-family: Raleway;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+.advantages p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+.advantages h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.order-btn {
+  color: var(--primary-white-color);
+  background-color: #2196f3;
+}
+.hero-title {
+  font-size: 44px;
+  line-height: 2.5;
+  font-weight: 900;
+}
+.what-are-we-doing {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
