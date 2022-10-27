@@ -23,26 +23,6 @@ body {
   letter-spacing: 0.02em;
 
 }
-
-.filters button:hover,
-button:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-text-color);
-}
-
-.filters button {
-  color: var(--primary-text-color);
-  background-color: var(--button-backround-color);
-  cursor: pointer;
-}
-
-.list-item h2 {
-  color: var(--primary-text-color);
-}
-.list-item p {
-  color: var(--secondary-text-color);
-}
-
 .list{
   list-style: none;
 }
@@ -137,4 +117,38 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
 
   color: #FFFFFF;
+}
+/* портфоліо */
+
+.filters button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color:#FFFFFF;
+}
+
+.filters button {
+  color: var(--primary-text-color);
+  background-color: var(--button-backround-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-width: 0;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.list-item a>h2{
+  font-size: 18px;
+  line-height: 2;
+  color:var(--primary-text-color);
+
+  letter-spacing: 0.06em;
+}
+.list-item a>p{
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+
 }
