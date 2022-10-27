@@ -43,11 +43,10 @@ button:focus {
   color: var(--secondary-text-color);
 }
 
-ul {
+.list{
   list-style: none;
 }
-
-a {
+.links{
   text-decoration: none;
 }
 .adress a:hover,
@@ -95,6 +94,7 @@ letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.875;
   cursor: pointer;
+  border-width: 0px;
 }
 .hero-title {
   font-size: 44px;
