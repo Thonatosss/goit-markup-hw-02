@@ -4,29 +4,39 @@
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --button-backround-color: #f5f4fa;
-  --secondary-font-family: font-family: "Raleway", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
 }
-.navigation-link{
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+.navigation-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height:1.1428;
+  line-height: 1.1428;
   letter-spacing: 0.02em;
-
 }
-.list{
+.list {
   list-style: none;
 }
-.links{
+.links {
   text-decoration: none;
 }
 .adress a:hover,
@@ -41,18 +51,21 @@ a:focus {
   letter-spacing: 0.02em;
 }
 .logo {
-  font-family: var(--secondary-font-family);
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 .logo-web {
   color: var(--accent-color);
 }
-.logo-studio{
+.logo-studio {
   color: #000000;
+}
+.footer-logo-studio{
+  color: #FFFFFF;
 }
 .advantages p {
   color: var(--secondary-text-color);
@@ -73,13 +86,16 @@ letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  font-family:inherit;
+  letter-spacing: 0.06em;
   cursor: pointer;
   border-width: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;;
 }
-.hero-title {
-  font-size: 44px;
-  line-height: 2.5;
-  font-weight: 900;
+.order-btn:hover,
+.order-btn:focus{
+  background:  #188CE8;;
 }
 .what-are-we-doing {
   font-size: 36px;
@@ -87,43 +103,44 @@ letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.our-team li>h3{
+.our-team li > h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
 
   letter-spacing: 0.03em;
 }
-.our-team li>p{
+.our-team li > p {
   font-size: 16px;
   line-height: 1.1875;
-  /* identical to box height */
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
 }
 .footer-tel,
-.footer-mail{
+.footer-mail {
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-location{
+.footer-location {
   font-size: 14px;
   line-height: 1.71;
 
-
   letter-spacing: 0.03em;
 
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.footer{
+  background: #2F303A;;
 }
 /* портфоліо */
 
 .filters button:hover,
 button:focus {
   background-color: var(--accent-color);
-  color:#FFFFFF;
+  color: #ffffff;
 }
 
 .filters button {
@@ -134,21 +151,25 @@ button:focus {
   font-size: 16px;
   line-height: 1.62;
   border-width: 0;
+  font-family: inherit;
 
   text-align: center;
   letter-spacing: 0.03em;
 }
-.list-item a>h2{
+.list-item a > h2 {
   font-size: 18px;
   line-height: 2;
-  color:var(--primary-text-color);
+  color: var(--primary-text-color);
 
   letter-spacing: 0.06em;
 }
-.list-item a>p{
+.list-item a > p {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
+}
 
+.test {
+  font-family: var(--secondary-font-family);
 }
