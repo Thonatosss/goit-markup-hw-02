@@ -67,12 +67,16 @@ a:focus {
 .footer-logo-studio{
   color: #FFFFFF;
 }
+.adress
 .advantages p {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
+}
+.adress{
+  font-style: normal;
 }
 .advantages h3 {
   font-size: 14px;
@@ -131,6 +135,14 @@ a:focus {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+.footer-location:hover,
+.footer-location:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-maill:focus{
+  color: var(--accent-color);
 }
 .footer{
   background: #2F303A;;
