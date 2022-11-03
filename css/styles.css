@@ -84,11 +84,9 @@ a:focus {
 .header-flex {
   display: flex;
   align-items: center;
-
 }
 .navigation-list {
   display: flex;
-
 }
 .adress {
   display: flex;
@@ -124,12 +122,15 @@ a:focus {
   padding-left: 32px;
   padding-right: 32px;
 }
+
 .order-btn:hover,
 .order-btn:focus {
   background: #188ce8;
 }
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 210px;
 }
 .hero-title {
   font-size: 44px;
@@ -141,7 +142,6 @@ a:focus {
 .hero-div {
   text-align: center;
 }
-
 
 .logo {
   margin-right: 93px;
@@ -173,17 +173,28 @@ a:focus {
 
   letter-spacing: 0.03em;
 }
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .advantages-info {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.advantages-info-container{
+.advantages-info-container {
   width: 270px;
-
 }
-.advantages:not(:last-child){
+.advantages:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -204,13 +215,12 @@ a:focus {
 }
 .list {
   display: flex;
-  
 }
-.advantages-list{
+.advantages-list {
   display: flex;
   justify-content: center;
 }
-.about-list-item:not(:last-child){
+.about-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -221,12 +231,30 @@ a:focus {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.our-team .member-name{
+.team-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.our-team-section {
+  background-color: #f5f4fa;
+}
+.our-team .member-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
 
   letter-spacing: 0.03em;
+}
+.member-name {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.about-member {
+  text-align: center;
 }
 .our-team .team-member .about-member {
   font-size: 16px;
@@ -234,8 +262,54 @@ a:focus {
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
 }
-.our-team{
+.our-team .team-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.first-member {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.second-member {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.third-member {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.fourth-member {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team {
   display: flex;
+  justify-content: center;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-tel,
 .footer-mail {
@@ -286,16 +360,54 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.list-item a > h2 {
+.filters {
+  display: flex;
+  justify-content: center;
+}
+.filters-buttons:not(:last-child) {
+  margin-right: 8px;
+}
+.main-section-title {
+}
+.btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+.list-item .poster-title {
   font-size: 18px;
   line-height: 2;
   color: var(--primary-text-color);
 
   letter-spacing: 0.06em;
 }
-.list-item a > p {
+.list-item .poster-filter {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
+}
+.main-section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.poster{
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.list-item{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.last-items-rows{
+  margin-right: 0;
+}
+.last-items-columns{
+  margin-bottom: 0;
 }
