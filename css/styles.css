@@ -397,7 +397,6 @@ button:focus {
 }
 .poster{
   width: 370px;
-  height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
@@ -410,4 +409,20 @@ button:focus {
 }
 .last-items-columns{
   margin-bottom: 0;
+}
+.poster-info{
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+}
+.logo-footer{
+  margin-bottom:20px;
+}
+.footer-adress-space:not(:last-child){
+  margin-bottom: 9px;
+}
+.space-logo{
+  margin-top: 20px;
 }
