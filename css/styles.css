@@ -33,12 +33,15 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /* УТИЛІТИ */
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .header {
@@ -231,6 +234,9 @@ a:focus {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.section .about {
+  padding-top: 0;
+}
 .team-title {
   font-size: 36px;
   line-height: 42px;
@@ -250,17 +256,17 @@ a:focus {
 }
 .member-name {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
-.about-member {
-  text-align: center;
-}
+
 .our-team .team-member .about-member {
   font-size: 16px;
   line-height: 1.1875;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
+}
+.about-member {
+  text-align: center;
 }
 .our-team .team-member:not(:last-child) {
   margin-right: 30px;
@@ -306,6 +312,17 @@ a:focus {
 .our-team {
   display: flex;
   justify-content: center;
+}
+
+.member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.members {
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .footer {
   padding-top: 60px;
@@ -356,26 +373,24 @@ button:focus {
   line-height: 1.62;
   border-width: 0;
   font-family: inherit;
-
   text-align: center;
   letter-spacing: 0.03em;
 }
 .filters {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.filters-buttons:not(:last-child) {
+.filters-buttons {
   margin-right: 8px;
 }
-.main-section-title {
-}
+
 .btn {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
   border-radius: 4px;
-  margin-bottom: 30px;
   margin-top: 100px;
 }
 .list-item .poster-title {
@@ -384,6 +399,9 @@ button:focus {
   color: var(--primary-text-color);
 
   letter-spacing: 0.06em;
+}
+.poster-title {
+  margin-bottom: 40px;
 }
 .list-item .poster-filter {
   font-size: 16px;
@@ -395,34 +413,33 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
 }
-.poster{
-  width: 370px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.list-item{
+
+.list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 3)
+  
 }
-.last-items-rows{
+.list-item:nth-child(3n) {
   margin-right: 0;
 }
-.last-items-columns{
+.list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.poster-info{
-  padding-top:20px;
+
+.poster-info {
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
-
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-.logo-footer{
-  margin-bottom:20px;
+.logo-footer {
+  margin-bottom: 20px;
+  margin-right: 0;
 }
-.footer-adress-space:not(:last-child){
+.footer-adress-space:not(:last-child) {
   margin-bottom: 9px;
-}
-.space-logo{
-  margin-top: 20px;
 }

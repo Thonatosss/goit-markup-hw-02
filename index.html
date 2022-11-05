@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="">
@@ -54,7 +57,10 @@
       <!-- герой -->
       <section class="hero section">
         <div class="container hero-div">
-          <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br>  ВАШОГО БІЗНЕСУ</h1>
+          <h1 class="hero-title">
+            ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
+            ВАШОГО БІЗНЕСУ
+          </h1>
 
           <button type="button" class="order-btn">Замовити послугу</button>
         </div>
@@ -97,13 +103,13 @@
         </ul>
       </section>
       <!-- Чим ми займаємось -->
-      <section class="section">
-        <h2 class="what-are-we-doing">Чим ми займаємось</h2>
-
+      <section class="section about">
         <div class="container">
+          <h2 class="what-are-we-doing">Чим ми займаємось</h2>
           <ul class="list list-killer">
             <li class="about-list-item">
               <img
+                class="photo"
                 src="./images/WhatAreWeDoing/first-photo.jpg"
                 alt="програміст сидить за робочим місцем та друкує код"
                 width="370"
@@ -133,58 +139,66 @@
       </section>
       <!-- наша команда -->
       <section class="section our-team-section">
-        <h2 class="team-title">Наша команда</h2>
         <div class="container">
+          <h2 class="team-title">Наша команда</h2>
           <ul class="our-team list-killer">
             <li class="team-member">
-              <div class="first-member">
+              <div class="members">
                 <img
                   src="./images/OurTeam/img.jpg"
                   alt="Ігор Дем'яненко Product Designer"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">Ігор Дем'яненко</h3>
-                <p lang="en" class="about-member">Product Designer</p>
+                <div class="member">
+                  <h3 class="member-name">Ігор Дем'яненко</h3>
+                  <p lang="en" class="about-member">Product Designer</p>
+                 </div>
               </div>
             </li>
 
             <li class="team-member">
-              <div class="second-member">
+              <div class="members">
                 <img
                   src="./images/OurTeam/front.jpg"
                   alt="Ольга Рєпіна Frontend Developer"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">Ольга Рєпіна</h3>
-                <p lang="en" class="about-member">Frontend Developer</p>
+                <div class="member" >
+                  <h3 class="member-name">Ольга Рєпіна</h3>
+                  <p lang="en" class="about-member">Frontend Developer</p> 
+                </div>
               </div>
             </li>
 
             <li class="team-member">
-              <div class="third-member">
+              <div class="members">
                 <img
                   src="./images/OurTeam/mykola.jpg"
                   alt="Микола Тарасов Marketing"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">Микола Тарасов</h3>
-                <p lang="en" class="about-member">Marketing</p>
+                <div class="member" >
+                  <h3 class="member-name">Микола Тарасов</h3>
+                  <p lang="en" class="about-member">Marketing</p> 
+                </div>
               </div>
             </li>
 
             <li class="team-member">
-              <div class="fourth-member">
+              <div class="members">
                 <img
                   src="./images/OurTeam/misha.jpg"
                   alt="Михайло Єрмаков UI Designer"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">Михайло Єрмаков</h3>
-                <p lang="en" class="about-member">UI Designer</p>
+                <div class="member" >
+                  <h3 class="member-name">Михайло Єрмаков</h3>
+                  <p lang="en" class="about-member">UI Designer</p>
+                 </div>
               </div>
             </li>
           </ul>
@@ -199,7 +213,7 @@
         >
         <address class="adress">
           <ul class="footer-adress list-killer">
-            <li class="footer-adress-space space-logo">
+            <li class="footer-adress-space">
               <a
                 class="footer-location links"
                 href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42664350267667%2C30.543007486861583&z=16"
